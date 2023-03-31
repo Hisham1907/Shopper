@@ -1,0 +1,2390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="author" href="#Hisham">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <title>Shopper</title>
+</head>
+
+<body>
+  <!--Home Start-->
+  <div id="home" class="home vh-100">
+    <!--Navbar Start-->
+    <nav class="navbar navbar-expand-lg nav-bg fixed-top shadow">
+      <div class="container">
+        <a class="navbar-brand logo-font d-flex align-items-center" href="#">
+          <i class="fa-solid fa-bag-shopping fa-xl me-2 mb-1"></i>
+          <h2 class="d-inline m-0">Shopper</h2>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="d-lg-flex justify-content-lg-around text-center text-lg-start w-100">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active text-black" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-black" aria-current="page" href="#arrivals">Arrivals</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-black" aria-current="page" href="#categories">Categories</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-black" aria-current="page" href="#best-sellers">Best Sellers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-black" aria-current="page" href="#blog">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-black" aria-current="page" href="#contact">Contact Us</a>
+              </li>
+            </ul>
+            <div class="nav-icon my-4 my-lg-0 d-flex align-items-center justify-content-center">
+              <i class="fa-solid fa-phone"></i>
+              <i class="fa-solid fa-cart-shopping"></i>
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <i class="fa-solid fa-heart"></i>
+            </div>
+            <a class=" ">
+              <button class="nav-btn bg-black text-white py-2 px-3 border-0" data-bs-toggle="modal"
+                data-bs-target="#exampleModal">
+                Sign Up
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--Navbar End-->
+    <!-- Navbar Modal -->
+    <div class="modal fade modal-xl" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 p-0">
+                <div class="sign-img">
+                  <img src="images/pexels-andrea-piacquadio-3760042.jpg" class="w-100" alt="" />
+                </div>
+              </div>
+              <div class="col-md-6 py-4">
+                <div class="sign-form px-4">
+                  <div class="sign-head d-flex justify-content-between">
+                    <h2 class="pb-3">Winter Is Coming</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <p class="pb-4">
+                    Fell free to contact us and we will get back to you as
+                    soon as possible.
+                  </p>
+
+                  <div class="container">
+                    <div class="row gy-4">
+                      <div class="col-md-6">
+                        <label for="fn" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="fn" placeholder="Hisham" />
+                      </div>
+                      <div class="col-md-6">
+                        <label for="Password" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="Password" />
+                      </div>
+                      <div class="col-md-12">
+                        <label for="email" class="form-label">E-mail</label>
+                        <input type="email" class="form-control" id="email" placeholder="Hishamrabea1907@gmail.com" />
+                      </div>
+                      <div class="col-md-12">
+                        <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                      </div>
+                    </div>
+                    <div class="main-btn w-100 text-center">
+                      <button class="bg-black text-white fw-bold py-3 px-4 border-0 mt-3">
+                        Submit
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="homeCarousel" class="carousel slide h-100" data-bs-ride="carousel">
+      <div class="carousel-inner h-100">
+        <div class="carousel-item active h-100 bg-img1" data-bs-interval="10000">
+          <div class="layer h-100 d-flex align-items-center justify-content-center">
+            <div class="home-caption text-center text-white">
+              <h3 class="fw-bold">10% OFF YOUR FIRST ORDER</h3>
+              <h1 class="display-3 py-3">Best Brand in the world</h1>
+              <button class="home-btn py-3 px-4 border-0 fw-bold">
+                Shop Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item h-100 bg-img2" data-bs-interval="10000">
+          <div class="layer h-100 d-flex align-items-center justify-content-center">
+            <div class="home-caption text-center text-white">
+              <h3 class="fw-bold">DON'T MISS YOUR CHANCE</h3>
+              <h1 class="display-3 py-3">New Winter Collection</h1>
+              <button class="home-btn py-3 px-4 border-0 fw-bold">
+                Shop Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev ms-3" type="button" data-bs-target="#homeCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next me-3" type="button" data-bs-target="#homeCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!--==================================================================-->
+  </div>
+  <!--Home End-->
+  <!--==================================================================-->
+  <!--==================================================================-->
+  <!--tape Start-->
+  <div class="tape mb-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <div class="item text-center">
+            <i class="truck-top fa-solid fa-truck fa-2x px-2"></i>
+            <div class="item-icon py-3 m-auto rounded-5 mb-3 overflow-hidden">
+              <i class="truck-bottom fa-solid fa-truck fa-2x text-black px-2"></i>
+            </div>
+            <h6 class="fw-bold small">FREE SHIPPING WORLDWIDE</h6>
+            <p>On order over 100$</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="item text-center">
+            <i class="truck-top fa-solid fa-gift fa-2x px-2"></i>
+            <div class="item-icon py-3 m-auto rounded-5 mb-3 overflow-hidden">
+              <i class="truck-bottom fa-solid fa-gift fa-2x text-black px-2"></i>
+            </div>
+            <h6 class="fw-bold small">SPECIAL GIFT</h6>
+            <p>Special gift for new members</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="item text-center">
+            <i class="truck-top fa-solid fa-phone fa-2x px-2"></i>
+            <div class="item-icon py-3 m-auto rounded-5 mb-3 overflow-hidden">
+              <i class="truck-bottom fa-solid fa-phone fa-2x text-black px-2"></i>
+            </div>
+            <h6 class="fw-bold small">SUPPORT ONLINE 24/7</h6>
+            <p>Call : (556) 991 777</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="item text-center">
+            <i class="truck-top fa-solid fa-sack-dollar fa-2x px-2"></i>
+            <div class="item-icon py-3 m-auto rounded-5 mb-3 overflow-hidden">
+              <i class="truck-bottom fa-solid fa-sack-dollar fa-2x text-black px-2"></i>
+            </div>
+            <h6 class="fw-bold small">SECURITY PAYMENT</h6>
+            <p>varios payment methods</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--tape End-->
+  <!--==================================================================-->
+  <!--==================================================================-->
+  <!--exclusive Start-->
+  <div id="exclusive" class="">
+    <div class="container">
+      <div class="row g-1">
+        <div class="col-lg-12 bg-e">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="p-5">
+                <h4 class="text-secondary fw-bold">
+                  Exclusive collection 2023
+                </h4>
+                <h2 class="display-6 fw-bold pb-2">Be exclusive</h2>
+                <p class="fs-5 pb-4">
+                  The best everyday option in a Super Saver range within a
+                  reasonable price. It is our responsibility to keep you 100
+                  percent stylish. Be smart & , trendy with us.
+                </p>
+
+                <button class="blog-btn fw-bold px-5 py-2">Explore</button>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="position-relative">
+                <img src="images/pexels-andrea-piacquadio-3760042.jpg" class="ex-img w-100" alt="" />
+                <div class="position-absolute bottom-0 start-0 text-center w-100">
+                  <button class="ex-btn py-2 px-4 border-0 mb-3">
+                    <h6 class="fw-bold d-inline">Outfit</h6>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="ex-img-2 position-relative">
+            <img src="images/bag.jpg" class="w-100" alt="" />
+            <div class="position-absolute bottom-0 start-0 text-center w-100">
+              <button class="ex-btn py-2 px-4 border-0 mb-3">
+                <h6 class="fw-bold d-inline">Bags</h6>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="ex-img-2 position-relative">
+            <img src="images/w-hat.jpg" class="w-100" alt="" />
+            <div class="position-absolute bottom-0 start-0 text-center w-100">
+              <button class="ex-btn py-2 px-4 border-0 mb-3">
+                <h6 class="fw-bold d-inline">Hats</h6>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="ex-img-2 position-relative">
+            <img src="images/heels.jpg " class="w-100" alt="" />
+            <div class="position-absolute bottom-0 start-0 text-center w-100">
+              <button class="ex-btn py-2 px-4 border-0 mb-3">
+                <h6 class="fw-bold d-inline">High Heels</h6>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--exclusive End-->
+
+  <!--==================================================================-->
+  <!--arrivals Start-->
+  <div id="arrivals" class="my-5">
+    <div class="arrivals-title text-center py-5">
+      <span>Read Today’s News.</span>
+      <h2 class="fw-bold display-6">Latest Arrivals</h2>
+    </div>
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-6">
+          <div class="card h-100">
+            <div class="card-img overflow-hidden position-relative">
+              <img src="images/arrival1.jpg" class="w-100" alt="" />
+              <div class="upper-icons position-absolute mt-5 me-3 top-0 end-0 d-flex flex-column">
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-share"></i>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#arrival1"><i class="fa-regular fa-eye"></i></a>
+              </div>
+              <div
+                class="add-cart py-2 bg-add-color d-flex justify-content-center align-items-center text-white position-absolute bottom-0 start-0 end-0">
+                <i class="fa-solid fa-cart-shopping me-2"></i>
+                <h6>Add to cart</h6>
+              </div>
+            </div>
+            <div class="card-body text-center">
+              <span>Clothing, Men</span>
+              <div class="card-stars text-warning">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular text-secondary fa-star"></i>
+              </div>
+              <h6 class="pt-1 fw-bold">Cotton Hoodie</h6>
+              <h5 class="py-1 fw-bold">
+                $28.50
+                <span class="text-decoration-line-through fw-bold h6 small text-secondary fs-6">$38.50</span>
+              </h5>
+              <div class="size">
+                <input type="radio" class="btn-check" name="options" id="arrival1-1" autocomplete="off" checked />
+                <label class="btn btn-sm btn-outline-dark fw-bold" for="arrival1-1">S</label>
+
+                <input type="radio" class="btn-check" name="options" id="arrival1-2" autocomplete="off" />
+                <label class="btn btn-sm btn-outline-dark fw-bold" for="arrival1-2">M</label>
+
+                <input type="radio" class="btn-check" name="options" id="arrival1-3" autocomplete="off" />
+                <label class="btn btn-sm btn-outline-dark fw-bold" for="arrival1-3">L</label>
+
+                <input type="radio" class="btn-check" name="options" id="arrival1-4" autocomplete="off" />
+                <label class="btn btn-sm btn-outline-dark fw-bold" for="arrival1-4">XL</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="card h-100">
+            <div class="card-img overflow-hidden position-relative">
+              <img src="images/arrival2.jpg" class="w-100" alt="" />
+              <div class="upper-icons position-absolute mt-5 me-3 top-0 end-0 d-flex flex-column">
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-share"></i>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#arrival2"><i class="fa-regular fa-eye"></i></a>
+              </div>
+              <div
+                class="add-cart py-2 bg-add-color d-flex justify-content-center align-items-center text-white position-absolute bottom-0 start-0 end-0">
+                <i class="fa-solid fa-cart-shopping me-2"></i>
+                <h6>Add to cart</h6>
+              </div>
+            </div>
+            <div class="card-body text-center">
+              <span>Clothing, Women</span>
+              <div class="card-stars text-warning">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <h5 class="pt-1 fw-bold">Black Jacket</h5>
+              <h5 class="py-1 fw-bold">
+                $70.00
+                <span class="text-decoration-line-through fw-bold h6 small text-secondary fs-6">$83.50</span>
+              </h5>
+              <div class="size">
+                <input type="radio" class="btn-check" name="options" id="arrival2-1" autocomplete="off" checked />
+                <label class="btn btn-sm btn-outline-dark fw-bold" for="arrival2-1">S</label>
+
+                <input type="radio" class="btn-check" name="options" id="arrival2-2" autocomplete="off" />
+                <label class="btn btn-sm btn-outline-dark fw-bold" for="arrival2-2">M</label>
+
+                <input type="radio" class="btn-check" name="options" id="arrival2-3" autocomplete="off" />
+                <label class="btn btn-sm btn-outline-dark fw-bold" for="arrival2-3">L</label>
+
+                <input type="radio" class="btn-check" name="options" id="arrival2-4" autocomplete="off" />
+                <label class="btn btn-sm btn-outline-dark fw-bold" for="arrival2-4">XL</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="card h-100">
+            <div class="card-img overflow-hidden position-relative">
+              <img src="images/arrival3.jpg" class="w-100" alt="" />
+              <div class="upper-icons position-absolute mt-5 me-3 top-0 end-0 d-flex flex-column">
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-share"></i>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#arrival3"><i class="fa-regular fa-eye"></i></a>
+              </div>
+              <div
+                class="add-cart py-2 bg-add-color d-flex justify-content-center align-items-center text-white position-absolute bottom-0 start-0 end-0">
+                <i class="fa-solid fa-cart-shopping me-2"></i>
+                <h6>Add to cart</h6>
+              </div>
+            </div>
+            <div class="card-body text-center">
+              <span>Clothing, Women</span>
+              <div class="card-stars text-warning">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+              <h5 class="pt-1 fw-bold">Jeans Jacket</h5>
+              <h5 class="py-1 fw-bold">
+                $55.00
+                <span class="text-decoration-line-through fw-bold h6 small text-secondary fs-6">$68.00</span>
+              </h5>
+              <div class="size">
+                <input type="radio" class="btn-check" name="options" id="arrival3-1" autocomplete="off" checked />
+                <label class="btn btn-sm btn-outline-dark fw-bold" for="arrival3-1">S</label>
+
+                <input type="radio" class="btn-check" name="options" id="arrival3-2" autocomplete="off" />
+                <label class="btn btn-sm btn-outline-dark fw-bold" for="arrival3-2">M</label>
+
+                <input type="radio" class="btn-check" name="options" id="arrival3-3" autocomplete="off" />
+                <label class="btn btn-sm btn-outline-dark fw-bold" for="arrival3-3">L</label>
+
+                <input type="radio" class="btn-check" name="options" id="arrival3-4" autocomplete="off" />
+                <label class="btn btn-sm btn-outline-dark fw-bold" for="arrival3-4">XL</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="card h-100">
+            <div class="card-img overflow-hidden position-relative">
+              <img src="images/arrival4.jpg" class="w-100" alt="" />
+              <div class="upper-icons position-absolute mt-5 me-3 top-0 end-0 d-flex flex-column">
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-share"></i>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#arrival4"><i class="fa-regular fa-eye"></i></a>
+              </div>
+              <div
+                class="add-cart py-2 bg-add-color d-flex justify-content-center align-items-center text-white position-absolute bottom-0 start-0 end-0">
+                <i class="fa-solid fa-cart-shopping me-2"></i>
+                <h6>Add to cart</h6>
+              </div>
+            </div>
+            <div class="card-body text-center">
+              <span>Clothing, Men</span>
+              <div class="card-stars text-warning">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular text-secondary fa-star"></i>
+              </div>
+              <h5 class="pt-1 fw-bold">Striped shirt</h5>
+              <h5 class="py-1 fw-bold">
+                $44.50
+                <span class="text-decoration-line-through fw-bold h6 small text-secondary fs-6">$56.00</span>
+              </h5>
+              <div class="size">
+                <input type="radio" class="btn-check" name="options" id="arrival4-1" autocomplete="off" checked />
+                <label class="btn btn-sm btn-outline-dark fw-bold" for="arrival4-1">S</label>
+
+                <input type="radio" class="btn-check" name="options" id="arrival4-2" autocomplete="off" />
+                <label class="btn btn-sm btn-outline-dark fw-bold" for="arrival4-2">M</label>
+
+                <input type="radio" class="btn-check" name="options" id="arrival4-3" autocomplete="off" />
+                <label class="btn btn-sm btn-outline-dark fw-bold" for="arrival4-3">L</label>
+
+                <input type="radio" class="btn-check" name="options" id="arrival4-4" autocomplete="off" />
+                <label class="btn btn-sm btn-outline-dark fw-bold" for="arrival4-4">XL</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="card h-100">
+            <div class="card-img overflow-hidden position-relative">
+              <img src="images/arrival5.jpg" class="w-100" alt="" />
+              <div class="upper-icons position-absolute mt-5 me-3 top-0 end-0 d-flex flex-column">
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-share"></i>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#arrival5"><i class="fa-regular fa-eye"></i></a>
+              </div>
+              <div
+                class="add-cart py-2 bg-add-color d-flex justify-content-center align-items-center text-white position-absolute bottom-0 start-0 end-0">
+                <i class="fa-solid fa-cart-shopping me-2"></i>
+                <h6>Add to cart</h6>
+              </div>
+            </div>
+            <div class="card-body text-center">
+              <span>Clothing, Men</span>
+              <div class="card-stars text-warning">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular text-secondary fa-star"></i>
+                <i class="fa-regular text-secondary fa-star"></i>
+              </div>
+              <h5 class="pt-1 fw-bold">Flannel Shirt</h5>
+              <h5 class="py-1 fw-bold">
+                $50.00
+                <span class="text-decoration-line-through fw-bold h6 small text-secondary fs-6">$65.00</span>
+              </h5>
+              <div class="size">
+                <input type="radio" class="btn-check" name="options" id="arrival5-1" autocomplete="off" checked />
+                <label class="btn btn-sm btn-outline-dark fw-bold" for="arrival5-1">S</label>
+
+                <input type="radio" class="btn-check" name="options" id="arrival5-2" autocomplete="off" />
+                <label class="btn btn-sm btn-outline-dark fw-bold" for="arrival5-2">M</label>
+
+                <input type="radio" class="btn-check" name="options" id="arrival5-3" autocomplete="off" />
+                <label class="btn btn-sm btn-outline-dark fw-bold" for="arrival5-3">L</label>
+
+                <input type="radio" class="btn-check" name="options" id="arrival5-4" autocomplete="off" />
+                <label class="btn btn-sm btn-outline-dark fw-bold" for="arrival5-4">XL</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="card h-100">
+            <div class="card-img overflow-hidden position-relative">
+              <img src="images/arrival6.jpg" class="w-100" alt="" />
+              <div class="upper-icons position-absolute mt-5 me-3 top-0 end-0 d-flex flex-column">
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-share"></i>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#arrival6"><i class="fa-regular fa-eye"></i></a>
+              </div>
+              <div
+                class="add-cart py-2 bg-add-color d-flex justify-content-center align-items-center text-white position-absolute bottom-0 start-0 end-0">
+                <i class="fa-solid fa-cart-shopping me-2"></i>
+                <h6>Add to cart</h6>
+              </div>
+            </div>
+            <div class="card-body text-center">
+              <span>Clothing, Women</span>
+              <div class="card-stars text-warning">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular text-secondary fa-star"></i>
+              </div>
+              <h5 class="pt-1 fw-bold">Blue Hoodie</h5>
+              <h5 class="py-1 fw-bold">
+                $66.30
+                <span class="text-decoration-line-through fw-bold h6 small text-secondary fs-6">$75.30</span>
+              </h5>
+              <div class="size">
+                <input type="radio" class="btn-check" name="options" id="arrival6-1" autocomplete="off" checked />
+                <label class="btn btn-sm btn-outline-dark fw-bold" for="arrival6-1">S</label>
+
+                <input type="radio" class="btn-check" name="options" id="arrival6-2" autocomplete="off" />
+                <label class="btn btn-sm btn-outline-dark fw-bold" for="arrival6-2">M</label>
+
+                <input type="radio" class="btn-check" name="options" id="arrival6-3" autocomplete="off" />
+                <label class="btn btn-sm btn-outline-dark fw-bold" for="arrival6-3">L</label>
+
+                <input type="radio" class="btn-check" name="options" id="arrival6-4" autocomplete="off" />
+                <label class="btn btn-sm btn-outline-dark fw-bold" for="arrival6-4">XL</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="card h-100">
+            <div class="card-img overflow-hidden position-relative">
+              <img src="images/arrival7.jpg" class="w-100" alt="" />
+              <div class="upper-icons position-absolute mt-5 me-3 top-0 end-0 d-flex flex-column">
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-share"></i>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#arrival7"><i class="fa-regular fa-eye"></i></a>
+              </div>
+              <div
+                class="add-cart py-2 bg-add-color d-flex justify-content-center align-items-center text-white position-absolute bottom-0 start-0 end-0">
+                <i class="fa-solid fa-cart-shopping me-2"></i>
+                <h6>Add to cart</h6>
+              </div>
+            </div>
+            <div class="card-body text-center">
+              <span>Clothing, Men</span>
+              <div class="card-stars text-warning">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <h5 class="pt-1 fw-bold">Dress Shirt</h5>
+              <h5 class="py-1 fw-bold">
+                $99.00
+                <span class="text-decoration-line-through fw-bold h6 small text-secondary fs-6">$110.00</span>
+              </h5>
+              <div class="size">
+                <input type="radio" class="btn-check" name="options" id="arrival7-1" autocomplete="off" checked />
+                <label class="btn btn-sm btn-outline-dark fw-bold" for="arrival7-1">S</label>
+
+                <input type="radio" class="btn-check" name="options" id="arrival7-2" autocomplete="off" />
+                <label class="btn btn-sm btn-outline-dark fw-bold" for="arrival7-2">M</label>
+
+                <input type="radio" class="btn-check" name="options" id="arrival7-3" autocomplete="off" />
+                <label class="btn btn-sm btn-outline-dark fw-bold" for="arrival7-3">L</label>
+
+                <input type="radio" class="btn-check" name="options" id="arrival7-4" autocomplete="off" />
+                <label class="btn btn-sm btn-outline-dark fw-bold" for="arrival7-4">XL</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="card h-100">
+            <div class="card-img overflow-hidden position-relative">
+              <img src="images/arrival8.jpg" class="w-100" alt="" />
+              <div class="upper-icons position-absolute mt-5 me-3 top-0 end-0 d-flex flex-column">
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-share"></i>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#arrival8"><i class="fa-regular fa-eye"></i></a>
+              </div>
+              <div
+                class="add-cart py-2 bg-add-color d-flex justify-content-center align-items-center text-white position-absolute bottom-0 start-0 end-0">
+                <i class="fa-solid fa-cart-shopping me-2"></i>
+                <h6>Add to cart</h6>
+              </div>
+            </div>
+            <div class="card-body text-center">
+              <span>Clothing, Women</span>
+              <div class="card-stars text-warning">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular text-secondary fa-star"></i>
+              </div>
+              <h5 class="pt-1 fw-bold">Brown Coat</h5>
+              <h5 class="py-1 fw-bold">
+                $79.99
+                <span class="text-decoration-line-through fw-bold h6 small text-secondary fs-6">$93.20</span>
+              </h5>
+              <div class="size">
+                <input type="radio" class="btn-check" name="options" id="arrival8-1" autocomplete="off" checked />
+                <label class="btn btn-sm btn-outline-dark fw-bold" for="arrival8-1">S</label>
+
+                <input type="radio" class="btn-check" name="options" id="arrival8-2" autocomplete="off" />
+                <label class="btn btn-sm btn-outline-dark fw-bold" for="arrival8-2">M</label>
+
+                <input type="radio" class="btn-check" name="options" id="arrival8-3" autocomplete="off" />
+                <label class="btn btn-sm btn-outline-dark fw-bold" for="arrival8-3">L</label>
+
+                <input type="radio" class="btn-check" name="options" id="arrival8-4" autocomplete="off" />
+                <label class="btn btn-sm btn-outline-dark fw-bold" for="arrival8-4">XL</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Arrivals Modal  -->
+    <div class="arrival-modals">
+      <!-- arrival1 -->
+      <div class="modal fade modal-xl" id="arrival1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-6 p-0">
+                  <div class="modal-img">
+                    <img src="images/arrival1.jpg" class="w-100 h-100" alt="" />
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="modal-data p-4 pb-0">
+                    <span class="small pb-1">Clothing, Men</span>
+                    <div class="modal-head d-flex justify-content-between">
+                      <h2 class="pt-1 fw-bold">Cotton Hoodie</h2>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="modal-stars text-warning">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-regular text-secondary fa-star"></i>
+                      <span class="text-secondary small">(54 reviews)</span>
+                    </div>
+                    <p class="pt-4 pb-2 fs-5">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Tempora a voluptas maxime, vel ipsum omnis veniam odio
+                      illum necessitatibus maiores recusandae vitae ducimus
+                      consequatur provident. Qui perferendis vero iusto omnis.
+                    </p>
+                    <h4 class="fw-bold text-black pb-1">Size</h4>
+
+                    <div class="size pb-4">
+                      <input type="radio" class="btn-check" name="options" id="modal1-1" autocomplete="off" checked />
+                      <label class="btn btn-lg btn-outline-dark fw-bold" for="modal1-1">S</label>
+
+                      <input type="radio" class="btn-check" name="options" id="modal1-2" autocomplete="off" />
+                      <label class="btn btn-lg btn-outline-dark fw-bold" for="modal1-2">M</label>
+
+                      <input type="radio" class="btn-check" name="options" id="modal1-3" autocomplete="off" />
+                      <label class="btn btn-lg btn-outline-dark fw-bold" for="modal1-3">L</label>
+
+                      <input type="radio" class="btn-check" name="options" id="modal1-4" autocomplete="off" />
+                      <label class="btn btn-lg btn-outline-dark fw-bold" for="modal1-4">XL</label>
+                    </div>
+                    <h3 class="py-1 fw-bold fs-3">
+                      <span class="h4 text-decoration-line-through fw-bold small text-secondary fs-5 mt-2">$38.50</span>
+                      $28.50
+                    </h3>
+                    <div class="modal-icons mt-3 mb-3">
+                      <i class="fa-solid fa-heart"></i>
+                      <i class="fa-solid fa-share"></i>
+                    </div>
+                    <button
+                      class="my-btn rounded-3 px-5 py-3 d-flex justify-content-center align-items-center mt-4 fs-5 fw-bold mb-sm-3">
+                      <i class="fa-solid fa-cart-shopping me-2"></i> Add to
+                      cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- arrival2 -->
+      <div class="modal fade modal-xl" id="arrival2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-6 p-0">
+                  <div class="modal-img">
+                    <img src="images/arrival2.jpg" class="w-100 h-100" alt="" />
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="modal-data p-4 pb-0">
+                    <span class="small pb-1">Clothing, Women</span>
+                    <div class="modal-head d-flex justify-content-between">
+                      <h2 class="pt-1 fw-bold">Black Jacket</h2>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="modal-stars text-warning">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-regular text-secondary fa-star"></i>
+                      <span class="text-secondary small">(54 reviews)</span>
+                    </div>
+                    <p class="pt-4 pb-2 fs-5">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Tempora a voluptas maxime, vel ipsum omnis veniam odio
+                      illum necessitatibus maiores recusandae vitae ducimus
+                      consequatur provident. Qui perferendis vero iusto omnis.
+                    </p>
+                    <h4 class="fw-bold text-black pb-1">Size</h4>
+
+                    <div class="size pb-4">
+                      <input type="radio" class="btn-check" name="options" id="modal2-1" autocomplete="off" checked />
+                      <label class="btn btn-lg btn-outline-dark fw-bold" for="modal2-1">S</label>
+
+                      <input type="radio" class="btn-check" name="options" id="modal2-2" autocomplete="off" />
+                      <label class="btn btn-lg btn-outline-dark fw-bold" for="modal2-2">M</label>
+
+                      <input type="radio" class="btn-check" name="options" id="modal2-3" autocomplete="off" />
+                      <label class="btn btn-lg btn-outline-dark fw-bold" for="modal2-3">L</label>
+
+                      <input type="radio" class="btn-check" name="options" id="modal2-4" autocomplete="off" />
+                      <label class="btn btn-lg btn-outline-dark fw-bold" for="modal2-4">XL</label>
+                    </div>
+                    <h3 class="py-1 fw-bold fs-3">
+                      <span class="h4 text-decoration-line-through fw-bold small text-secondary fs-5 mt-2">$83.50</span>
+                      $70.00
+                    </h3>
+                    <div class="modal-icons mt-3 mb-3">
+                      <i class="fa-solid fa-heart"></i>
+                      <i class="fa-solid fa-share"></i>
+                    </div>
+                    <button
+                      class="my-btn rounded-3 px-5 py-3 d-flex justify-content-center align-items-center mt-4 fs-5 fw-bold mb-sm-3">
+                      <i class="fa-solid fa-cart-shopping me-2"></i> Add to
+                      cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- arrival3 -->
+      <div class="modal fade modal-xl" id="arrival3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-6 p-0">
+                  <div class="modal-img">
+                    <img src="images/arrival3.jpg" class="w-100 h-100" alt="" />
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="modal-data p-4 pb-0">
+                    <span class="small pb-1">Clothing, Women</span>
+                    <div class="modal-head d-flex justify-content-between">
+                      <h2 class="pt-1 fw-bold">Jeans Jacket</h2>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="modal-stars text-warning">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                      <span class="text-secondary small">(54 reviews)</span>
+                    </div>
+                    <p class="pt-4 pb-2 fs-5">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Tempora a voluptas maxime, vel ipsum omnis veniam odio
+                      illum necessitatibus maiores recusandae vitae ducimus
+                      consequatur provident. Qui perferendis vero iusto omnis.
+                    </p>
+                    <h4 class="fw-bold text-black pb-1">Size</h4>
+
+                    <div class="size pb-4">
+                      <input type="radio" class="btn-check" name="options" id="modal3-1" autocomplete="off" checked />
+                      <label class="btn btn-lg btn-outline-dark fw-bold" for="modal3-1">S</label>
+
+                      <input type="radio" class="btn-check" name="options" id="modal3-2" autocomplete="off" />
+                      <label class="btn btn-lg btn-outline-dark fw-bold" for="modal3-2">M</label>
+
+                      <input type="radio" class="btn-check" name="options" id="modal3-3" autocomplete="off" />
+                      <label class="btn btn-lg btn-outline-dark fw-bold" for="modal3-3">L</label>
+
+                      <input type="radio" class="btn-check" name="options" id="modal3-4" autocomplete="off" />
+                      <label class="btn btn-lg btn-outline-dark fw-bold" for="modal3-4">XL</label>
+                    </div>
+                    <h3 class="py-1 fw-bold fs-3">
+                      <span class="h4 text-decoration-line-through fw-bold small text-secondary fs-5 mt-2">$68.00</span>
+                      $55.00
+                    </h3>
+                    <div class="modal-icons mt-3 mb-3">
+                      <i class="fa-solid fa-heart"></i>
+                      <i class="fa-solid fa-share"></i>
+                    </div>
+                    <button
+                      class="my-btn rounded-3 px-5 py-3 d-flex justify-content-center align-items-center mt-4 fs-5 fw-bold mb-sm-3">
+                      <i class="fa-solid fa-cart-shopping me-2"></i> Add to
+                      cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- arrival4 -->
+
+      <div class="modal fade modal-xl" id="arrival4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-6 p-0">
+                  <div class="modal-img">
+                    <img src="images/arrival4.jpg" class="w-100 h-100" alt="" />
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="modal-data p-4 pb-0">
+                    <span class="small pb-1">Clothing, Men</span>
+                    <div class="modal-head d-flex justify-content-between">
+                      <h2 class="pt-1 fw-bold">Striped shirt</h2>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="modal-stars text-warning">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-regular text-secondary fa-star"></i>
+                      <span class="text-secondary small">(54 reviews)</span>
+                    </div>
+                    <p class="pt-4 pb-2 fs-5">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Tempora a voluptas maxime, vel ipsum omnis veniam odio
+                      illum necessitatibus maiores recusandae vitae ducimus
+                      consequatur provident. Qui perferendis vero iusto omnis.
+                    </p>
+                    <h4 class="fw-bold text-black pb-1">Size</h4>
+
+                    <div class="size pb-4">
+                      <input type="radio" class="btn-check" name="options" id="modal4-1" autocomplete="off" checked />
+                      <label class="btn btn-lg btn-outline-dark fw-bold" for="modal4-1">S</label>
+
+                      <input type="radio" class="btn-check" name="options" id="modal4-2" autocomplete="off" />
+                      <label class="btn btn-lg btn-outline-dark fw-bold" for="modal4-2">M</label>
+
+                      <input type="radio" class="btn-check" name="options" id="modal4-3" autocomplete="off" />
+                      <label class="btn btn-lg btn-outline-dark fw-bold" for="modal4-3">L</label>
+
+                      <input type="radio" class="btn-check" name="options" id="modal4-4" autocomplete="off" />
+                      <label class="btn btn-lg btn-outline-dark fw-bold" for="modal4-4">XL</label>
+                    </div>
+                    <h3 class="py-1 fw-bold fs-3">
+                      <span class="h4 text-decoration-line-through fw-bold small text-secondary fs-5 mt-2">$56.00</span>
+                      $44.50
+                    </h3>
+                    <div class="modal-icons mt-3 mb-3">
+                      <i class="fa-solid fa-heart"></i>
+                      <i class="fa-solid fa-share"></i>
+                    </div>
+                    <button
+                      class="my-btn rounded-3 px-5 py-3 d-flex justify-content-center align-items-center mt-4 fs-5 fw-bold mb-sm-3">
+                      <i class="fa-solid fa-cart-shopping me-2"></i> Add to
+                      cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- arrival5 -->
+      <div class="modal fade modal-xl" id="arrival5" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-6 p-0">
+                  <div class="modal-img">
+                    <img src="images/arrival5.jpg" class="w-100 h-100" alt="" />
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="modal-data p-4 pb-0">
+                    <span class="small pb-1">Clothing, Men</span>
+                    <div class="modal-head d-flex justify-content-between">
+                      <h2 class="pt-1 fw-bold">Flannel Shirt</h2>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="modal-stars text-warning">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-regular text-secondary fa-star"></i>
+                      <i class="fa-regular text-secondary fa-star"></i>
+                      <span class="text-secondary small">(54 reviews)</span>
+                    </div>
+                    <p class="pt-4 pb-2 fs-5">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Tempora a voluptas maxime, vel ipsum omnis veniam odio
+                      illum necessitatibus maiores recusandae vitae ducimus
+                      consequatur provident. Qui perferendis vero iusto omnis.
+                    </p>
+                    <h4 class="fw-bold text-black pb-1">Size</h4>
+
+                    <div class="size pb-4">
+                      <input type="radio" class="btn-check" name="options" id="modal5-1" autocomplete="off" checked />
+                      <label class="btn btn-lg btn-outline-dark fw-bold" for="modal5-1">S</label>
+
+                      <input type="radio" class="btn-check" name="options" id="modal5-2" autocomplete="off" />
+                      <label class="btn btn-lg btn-outline-dark fw-bold" for="modal5-2">M</label>
+
+                      <input type="radio" class="btn-check" name="options" id="modal5-3" autocomplete="off" />
+                      <label class="btn btn-lg btn-outline-dark fw-bold" for="modal5-3">L</label>
+
+                      <input type="radio" class="btn-check" name="options" id="modal5-4" autocomplete="off" />
+                      <label class="btn btn-lg btn-outline-dark fw-bold" for="modal5-4">XL</label>
+                    </div>
+                    <h3 class="py-1 fw-bold fs-3">
+                      <span class="h4 text-decoration-line-through fw-bold small text-secondary fs-5 mt-2">$65.00</span>
+                      $50.00
+                    </h3>
+                    <div class="modal-icons mt-3 mb-3">
+                      <i class="fa-solid fa-heart"></i>
+                      <i class="fa-solid fa-share"></i>
+                    </div>
+                    <button
+                      class="my-btn rounded-3 px-5 py-3 d-flex justify-content-center align-items-center mt-4 fs-5 fw-bold mb-sm-3">
+                      <i class="fa-solid fa-cart-shopping me-2"></i> Add to
+                      cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- arrival6 -->
+
+      <div class="modal fade modal-xl" id="arrival6" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-6 p-0">
+                  <div class="modal-img">
+                    <img src="images/arrival6.jpg" class="w-100 h-100" alt="" />
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="modal-data p-4 pb-0">
+                    <span class="small pb-1">Clothing, Women</span>
+                    <div class="modal-head d-flex justify-content-between">
+                      <h2 class="pt-1 fw-bold">Blue Hoodie</h2>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="modal-stars text-warning">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-regular text-secondary fa-star"></i>
+                      <span class="text-secondary small">(54 reviews)</span>
+                    </div>
+                    <p class="pt-4 pb-2 fs-5">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Tempora a voluptas maxime, vel ipsum omnis veniam odio
+                      illum necessitatibus maiores recusandae vitae ducimus
+                      consequatur provident. Qui perferendis vero iusto omnis.
+                    </p>
+                    <h4 class="fw-bold text-black pb-1">Size</h4>
+
+                    <div class="size pb-4">
+                      <input type="radio" class="btn-check" name="options" id="modal6-1" autocomplete="off" checked />
+                      <label class="btn btn-lg btn-outline-dark fw-bold" for="modal6-1">S</label>
+
+                      <input type="radio" class="btn-check" name="options" id="modal6-2" autocomplete="off" />
+                      <label class="btn btn-lg btn-outline-dark fw-bold" for="modal6-2">M</label>
+
+                      <input type="radio" class="btn-check" name="options" id="modal6-3" autocomplete="off" />
+                      <label class="btn btn-lg btn-outline-dark fw-bold" for="modal6-3">L</label>
+
+                      <input type="radio" class="btn-check" name="options" id="modal6-4" autocomplete="off" />
+                      <label class="btn btn-lg btn-outline-dark fw-bold" for="modal6-4">XL</label>
+                    </div>
+                    <h3 class="py-1 fw-bold fs-3">
+                      <span class="h4 text-decoration-line-through fw-bold small text-secondary fs-5 mt-2">$75.30</span>
+                      $66.30
+                    </h3>
+                    <div class="modal-icons mt-3 mb-3">
+                      <i class="fa-solid fa-heart"></i>
+                      <i class="fa-solid fa-share"></i>
+                    </div>
+                    <button
+                      class="my-btn rounded-3 px-5 py-3 d-flex justify-content-center align-items-center mt-4 fs-5 fw-bold mb-sm-3">
+                      <i class="fa-solid fa-cart-shopping me-2"></i> Add to
+                      cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- arrival7 -->
+      <div class="modal fade modal-xl" id="arrival7" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-6 p-0">
+                  <div class="modal-img">
+                    <img src="images/arrival7.jpg" class="w-100 h-100" alt="" />
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="modal-data p-4 pb-0">
+                    <span class="small pb-1">Clothing, Men</span>
+                    <div class="modal-head d-flex justify-content-between">
+                      <h2 class="pt-1 fw-bold">Dress Shirt</h2>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="modal-stars text-warning">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <span class="text-secondary small">(54 reviews)</span>
+                    </div>
+                    <p class="pt-4 pb-2 fs-5">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Tempora a voluptas maxime, vel ipsum omnis veniam odio
+                      illum necessitatibus maiores recusandae vitae ducimus
+                      consequatur provident. Qui perferendis vero iusto omnis.
+                    </p>
+                    <h4 class="fw-bold text-black pb-1">Size</h4>
+
+                    <div class="size pb-4">
+                      <input type="radio" class="btn-check" name="options" id="modal7-1" autocomplete="off" checked />
+                      <label class="btn btn-lg btn-outline-dark fw-bold" for="modal7-1">S</label>
+
+                      <input type="radio" class="btn-check" name="options" id="modal7-2" autocomplete="off" />
+                      <label class="btn btn-lg btn-outline-dark fw-bold" for="modal7-2">M</label>
+
+                      <input type="radio" class="btn-check" name="options" id="modal7-3" autocomplete="off" />
+                      <label class="btn btn-lg btn-outline-dark fw-bold" for="modal7-3">L</label>
+
+                      <input type="radio" class="btn-check" name="options" id="modal7-4" autocomplete="off" />
+                      <label class="btn btn-lg btn-outline-dark fw-bold" for="modal7-4">XL</label>
+                    </div>
+                    <h3 class="py-1 fw-bold fs-3">
+                      <span
+                        class="h4 text-decoration-line-through fw-bold small text-secondary fs-5 mt-2">$110.00</span>
+                      $99.00
+                    </h3>
+                    <div class="modal-icons mt-3 mb-3">
+                      <i class="fa-solid fa-heart"></i>
+                      <i class="fa-solid fa-share"></i>
+                    </div>
+                    <button
+                      class="my-btn rounded-3 px-5 py-3 d-flex justify-content-center align-items-center mt-4 fs-5 fw-bold mb-sm-3">
+                      <i class="fa-solid fa-cart-shopping me-2"></i> Add to
+                      cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- arrival8 -->
+      <div class="modal fade modal-xl" id="arrival8" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-6 p-0">
+                  <div class="modal-img">
+                    <img src="images/arrival8.jpg" class="w-100 h-100" alt="" />
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="modal-data p-4 pb-0">
+                    <span class="small pb-1">Clothing, Women</span>
+                    <div class="modal-head d-flex justify-content-between">
+                      <h2 class="pt-1 fw-bold">Brown Coat</h2>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="modal-stars text-warning">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-regular text-secondary fa-star"></i>
+                      <span class="text-secondary small">(54 reviews)</span>
+                    </div>
+                    <p class="pt-4 pb-2 fs-5">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Tempora a voluptas maxime, vel ipsum omnis veniam odio
+                      illum necessitatibus maiores recusandae vitae ducimus
+                      consequatur provident. Qui perferendis vero iusto omnis.
+                    </p>
+                    <h4 class="fw-bold text-black pb-1">Size</h4>
+
+                    <div class="size pb-4">
+                      <input type="radio" class="btn-check" name="options" id="modal8-1" autocomplete="off" checked />
+                      <label class="btn btn-lg btn-outline-dark fw-bold" for="modal8-1">S</label>
+
+                      <input type="radio" class="btn-check" name="options" id="modal8-2" autocomplete="off" />
+                      <label class="btn btn-lg btn-outline-dark fw-bold" for="modal8-2">M</label>
+
+                      <input type="radio" class="btn-check" name="options" id="modal8-3" autocomplete="off" />
+                      <label class="btn btn-lg btn-outline-dark fw-bold" for="modal8-3">L</label>
+
+                      <input type="radio" class="btn-check" name="options" id="modal8-4" autocomplete="off" />
+                      <label class="btn btn-lg btn-outline-dark fw-bold" for="modal8-4">XL</label>
+                    </div>
+                    <h3 class="py-1 fw-bold fs-3">
+                      <span class="h4 text-decoration-line-through fw-bold small text-secondary fs-5 mt-2">$93.20</span>
+                      $79.99
+                    </h3>
+                    <div class="modal-icons mt-3 mb-3">
+                      <i class="fa-solid fa-heart"></i>
+                      <i class="fa-solid fa-share"></i>
+                    </div>
+                    <button
+                      class="my-btn rounded-3 px-5 py-3 d-flex justify-content-center align-items-center mt-4 fs-5 fw-bold mb-sm-3">
+                      <i class="fa-solid fa-cart-shopping me-2"></i> Add to
+                      cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--arrivals End-->
+  <!--==================================================================-->
+  <!--==================================================================-->
+  <!--categories Start-->
+  <div id="categories" class="my-3">
+    <div class="categories-title text-center py-3">
+      <span>Enjoy our Variety.</span>
+      <h2 class="fw-bold display-6">Categories</h2>
+    </div>
+    <div class="container">
+      <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-Shirt"
+            type="button" role="tab" aria-controls="pills-Shirt" aria-selected="true">
+            Shirt
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-Shoes"
+            type="button" role="tab" aria-controls="pills-Shoes" aria-selected="false">
+            Shoes
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-Watch"
+            type="button" role="tab" aria-controls="pills-Watch" aria-selected="false">
+            Watch
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-Watch-tab" data-bs-toggle="pill" data-bs-target="#pills-Sunglasses"
+            type="button" role="tab" aria-controls="pills-Sunglasses" aria-selected="false">
+            Sunglasses
+          </button>
+        </li>
+      </ul>
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active py-5" id="pills-Shirt" role="tabpanel" aria-labelledby="pills-Shirt-tab"
+          tabindex="0">
+          <div class="container">
+            <div id="carouselExampleFade" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="container">
+                    <div class="row gy-4 gy-lg-0">
+                      <div class="col-lg-3 col-md-6">
+                        <div class="cat-item p-3 rounded-3 bg-white text-center">
+                          <div class="cat-img">
+                            <img src="images/shirt/shirt-1.png" class="w-100" alt="" />
+                          </div>
+                          <h5 class="fw-bold">Pink Shirt</h5>
+                          <div class="cat-stars text-warning">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular text-secondary fa-star"></i>
+                          </div>
+                          <h5 class="fw-bold py-2">$50.00</h5>
+                          <button class="py-1">Add to cart</button>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-6">
+                        <div class="cat-item p-3 rounded-3 bg-white text-center">
+                          <div class="cat-img">
+                            <img src="images/shirt/shirt-2.png" class="w-100" alt="" />
+                          </div>
+                          <h5 class="fw-bold">Cyan Shirt</h5>
+                          <div class="cat-stars text-warning">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                          </div>
+                          <h5 class="fw-bold py-2">$58.00</h5>
+                          <button class="py-1">Add to cart</button>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-6">
+                        <div class="cat-item p-3 rounded-3 bg-white text-center">
+                          <div class="cat-img">
+                            <img src="images/shirt/shirt-3.png" class="w-100" alt="" />
+                          </div>
+                          <h5 class="fw-bold">Navy blue Shirt</h5>
+                          <div class="cat-stars text-warning">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                          </div>
+                          <h5 class="fw-bold py-2">$62.50</h5>
+                          <button class="py-1">Add to cart</button>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-6">
+                        <div class="cat-item p-3 rounded-3 bg-white text-center">
+                          <div class="cat-img">
+                            <img src="images/shirt/shirt-4.png" class="w-100" alt="" />
+                          </div>
+                          <h5 class="fw-bold">Classic Shirt</h5>
+                          <div class="cat-stars text-warning">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                          </div>
+                          <h5 class="fw-bold py-2">$70.00</h5>
+                          <button class="py-1">Add to cart</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="container">
+                    <div class="row gy-4 gy-lg-0">
+                      <div class="col-lg-3 col-md-6">
+                        <div class="cat-item p-3 rounded-3 bg-white text-center">
+                          <div class="cat-img">
+                            <img src="images/shirt/shirt-5.png" class="w-100" alt="" />
+                          </div>
+                          <h5 class="fw-bold">Black Shirt</h5>
+                          <div class="cat-stars text-warning">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                          </div>
+                          <h5 class="fw-bold py-2">$88.00</h5>
+                          <button class="py-1">Add to cart</button>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-6">
+                        <div class="cat-item p-3 rounded-3 bg-white text-center">
+                          <div class="cat-img">
+                            <img src="images/shirt/shirt-6.png" class="w-100" alt="" />
+                          </div>
+                          <h5 class="fw-bold">Original Shirt</h5>
+                          <div class="cat-stars text-warning">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                          </div>
+                          <h5 class="fw-bold py-2">$99.00</h5>
+                          <button class="py-1">Add to cart</button>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-6">
+                        <div class="cat-item p-3 rounded-3 bg-white text-center">
+                          <div class="cat-img">
+                            <img src="images/shirt/shirt-7.png" class="w-100" alt="" />
+                          </div>
+                          <h5 class="fw-bold">Gray Shirt</h5>
+                          <div class="cat-stars text-warning">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                          </div>
+                          <h5 class="fw-bold py-2">$76.00</h5>
+                          <button class="py-1">Add to cart</button>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-6">
+                        <div class="cat-item p-3 rounded-3 bg-white text-center">
+                          <div class="cat-img">
+                            <img src="images/shirt/shirt-8.png" class="w-100" alt="" />
+                          </div>
+                          <h5 class="fw-bold">Sky Shirt</h5>
+                          <div class="cat-stars text-warning">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <i class="fa-regular text-secondary fa-star"></i>
+                            <i class="fa-regular text-secondary fa-star"></i>
+                          </div>
+                          <h5 class="fw-bold py-2">$66.00</h5>
+                          <button class="py-1">Add to cart</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade py-5" id="pills-Shoes" role="tabpanel" aria-labelledby="pills-Shoes-tab" tabindex="0">
+          <div class="container">
+            <div id="shoeCarousel" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="container">
+                    <div class="row gy-4 gy-lg-0">
+                      <div class="col-lg-3 col-md-6">
+                        <div class="cat-item p-3 rounded-3 bg-white text-center">
+                          <div class="cat-img">
+                            <img src="images/shoes/shoe-1.png" class="w-100" alt="" />
+                          </div>
+                          <h5 class="fw-bold">Perfect Shoes</h5>
+                          <div class="cat-stars text-warning">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                          </div>
+                          <h5 class="fw-bold py-2">$99.00</h5>
+                          <button class="py-1">Add to cart</button>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-6">
+                        <div class="cat-item p-3 rounded-3 bg-white text-center">
+                          <div class="cat-img">
+                            <img src="images/shoes/shoe-2.png" class="w-100" alt="" />
+                          </div>
+                          <h5 class="fw-bold">Adidas Shoes</h5>
+                          <div class="cat-stars text-warning">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                          </div>
+                          <h5 class="fw-bold py-2">$150.00</h5>
+                          <button class="py-1">Add to cart</button>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-6">
+                        <div class="cat-item p-3 rounded-3 bg-white text-center">
+                          <div class="cat-img">
+                            <img src="images/shoes/shoe-3.png" class="w-100" alt="" />
+                          </div>
+                          <h5 class="fw-bold">Nike Shoes</h5>
+                          <div class="cat-stars text-warning">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                          </div>
+                          <h5 class="fw-bold py-2">$143.50</h5>
+                          <button class="py-1">Add to cart</button>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-6">
+                        <div class="cat-item p-3 rounded-3 bg-white text-center">
+                          <div class="cat-img">
+                            <img src="images/shoes/shoe-4.png" class="w-100" alt="" />
+                          </div>
+                          <h5 class="fw-bold">Cool Shoes</h5>
+                          <div class="cat-stars text-warning">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <i class="fa-regular text-secondary fa-star"></i>
+                          </div>
+                          <h5 class="fw-bold py-2">$70.00</h5>
+                          <button class="py-1">Add to cart</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="container">
+                    <div class="row gy-4 gy-lg-0">
+                      <div class="col-lg-3 col-md-6">
+                        <div class="cat-item p-3 rounded-3 bg-white text-center">
+                          <div class="cat-img">
+                            <img src="images/shoes/shoe-5.png" class="w-100" alt="" />
+                          </div>
+                          <h5 class="fw-bold">Black Shoes</h5>
+                          <div class="cat-stars text-warning">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <i class="fa-regular text-secondary fa-star"></i>
+                          </div>
+                          <h5 class="fw-bold py-2">$95.00</h5>
+                          <button class="py-1">Add to cart</button>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-6">
+                        <div class="cat-item p-3 rounded-3 bg-white text-center">
+                          <div class="cat-img">
+                            <img src="images/shoes/shoe-6.png" class="w-100" alt="" />
+                          </div>
+                          <h5 class="fw-bold">Blue Shoes</h5>
+                          <div class="cat-stars text-warning">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                          </div>
+                          <h5 class="fw-bold py-2">$99.00</h5>
+                          <button class="py-1">Add to cart</button>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-6">
+                        <div class="cat-item p-3 rounded-3 bg-white text-center">
+                          <div class="cat-img">
+                            <img src="images/shoes/shoe-7.png" class="w-100" alt="" />
+                          </div>
+                          <h5 class="fw-bold">Sky Shoes</h5>
+                          <div class="cat-stars text-warning">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                          </div>
+                          <h5 class="fw-bold py-2">$76.00</h5>
+                          <button class="py-1">Add to cart</button>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-6">
+                        <div class="cat-item p-3 rounded-3 bg-white text-center">
+                          <div class="cat-img">
+                            <img src="images/shoes/shoe-8.png" class="w-100" alt="" />
+                          </div>
+                          <h5 class="fw-bold">Super Shoes</h5>
+                          <div class="cat-stars text-warning">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular text-secondary fa-star"></i>
+                          </div>
+                          <h5 class="fw-bold py-2">$120.00</h5>
+                          <button class="py-1">Add to cart</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#shoeCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#shoeCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade py-5" id="pills-Watch" role="tabpanel" aria-labelledby="pills-Watch-tab" tabindex="0">
+          <div class="container">
+            <div id="watchCarousel" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="container">
+                    <div class="row gy-4 gy-lg-0">
+                      <div class="col-lg-3 col-md-6">
+                        <div class="cat-item p-3 rounded-3 bg-white text-center">
+                          <div class="cat-img">
+                            <img src="images/watch/watch-1.png" class="w-100" alt="" />
+                          </div>
+                          <h5 class="fw-bold">Rolex Watch</h5>
+                          <div class="cat-stars text-warning">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                          </div>
+                          <h5 class="fw-bold py-2">$1300.00</h5>
+                          <button class="py-1">Add to cart</button>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-6">
+                        <div class="cat-item p-3 rounded-3 bg-white text-center">
+                          <div class="cat-img">
+                            <img src="images/watch/watch-2.png" class="w-100" alt="" />
+                          </div>
+                          <h5 class="fw-bold">Apple Watch</h5>
+                          <div class="cat-stars text-warning">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                          </div>
+                          <h5 class="fw-bold py-2">$1150.00</h5>
+                          <button class="py-1">Add to cart</button>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-6">
+                        <div class="cat-item p-3 rounded-3 bg-white text-center">
+                          <div class="cat-img">
+                            <img src="images/watch/watch-3.png" class="w-100" alt="" />
+                          </div>
+                          <h5 class="fw-bold">Nice Watch</h5>
+                          <div class="cat-stars text-warning">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                          </div>
+                          <h5 class="fw-bold py-2">$870.00</h5>
+                          <button class="py-1">Add to cart</button>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-6">
+                        <div class="cat-item p-3 rounded-3 bg-white text-center">
+                          <div class="cat-img">
+                            <img src="images/watch/watch-4.png" class="w-100" alt="" />
+                          </div>
+                          <h5 class="fw-bold">Brown Watch</h5>
+                          <div class="cat-stars text-warning">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                          </div>
+                          <h5 class="fw-bold py-2">$500.00</h5>
+                          <button class="py-1">Add to cart</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="container">
+                    <div class="row gy-4 gy-lg-0">
+                      <div class="col-lg-3 col-md-6">
+                        <div class="cat-item p-3 rounded-3 bg-white text-center">
+                          <div class="cat-img">
+                            <img src="images/watch/watch-1.png" class="w-100" alt="" />
+                          </div>
+                          <h5 class="fw-bold">Casio Watch</h5>
+                          <div class="cat-stars text-warning">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                          </div>
+                          <h5 class="fw-bold py-2">$990.00</h5>
+                          <button class="py-1">Add to cart</button>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-6">
+                        <div class="cat-item p-3 rounded-3 bg-white text-center">
+                          <div class="cat-img">
+                            <img src="images/watch/watch-6.png" class="w-100" alt="" />
+                          </div>
+                          <h5 class="fw-bold">Navy Watch</h5>
+                          <div class="cat-stars text-warning">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular text-secondary fa-star"></i>
+                          </div>
+                          <h5 class="fw-bold py-2">$350.00</h5>
+                          <button class="py-1">Add to cart</button>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-6">
+                        <div class="cat-item p-3 rounded-3 bg-white text-center">
+                          <div class="cat-img">
+                            <img src="images/watch/watch-7.png" class="w-100" alt="" />
+                          </div>
+                          <h5 class="fw-bold">Best Watch</h5>
+                          <div class="cat-stars text-warning">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                          </div>
+                          <h5 class="fw-bold py-2">$760.00</h5>
+                          <button class="py-1">Add to cart</button>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-6">
+                        <div class="cat-item p-3 rounded-3 bg-white text-center">
+                          <div class="cat-img">
+                            <img src="images/watch/watch-8.png" class="w-100" alt="" />
+                          </div>
+                          <h5 class="fw-bold">Historic Watch</h5>
+                          <div class="cat-stars text-warning">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                          </div>
+                          <h5 class="fw-bold py-2">$1200.00</h5>
+                          <button class="py-1">Add to cart</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#watchCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#watchCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade py-5" id="pills-Sunglasses" role="tabpanel" aria-labelledby="pills-Sunglasses-tab"
+          tabindex="0">
+          <div class="container">
+            <div id="SunglassesCarousel" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="container">
+                    <div class="row gy-4 gy-lg-0">
+                      <div class="col-lg-3 col-md-6">
+                        <div class="cat-item p-3 rounded-3 bg-white text-center">
+                          <div class="cat-img">
+                            <img src="images/sunglasses/sunglass-1.png" class="w-100" alt="" />
+                          </div>
+                          <h5 class="fw-bold">Red Glasses</h5>
+                          <div class="cat-stars text-warning">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                          </div>
+                          <h5 class="fw-bold py-2">$150.00</h5>
+                          <button class="py-1">Add to cart</button>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-6">
+                        <div class="cat-item p-3 rounded-3 bg-white text-center">
+                          <div class="cat-img">
+                            <img src="images/sunglasses/sunglass-2.png" class="w-100" alt="" />
+                          </div>
+                          <h5 class="fw-bold">Blue Glasses</h5>
+                          <div class="cat-stars text-warning">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                          </div>
+                          <h5 class="fw-bold py-2">$200.00</h5>
+                          <button class="py-1">Add to cart</button>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-6">
+                        <div class="cat-item p-3 rounded-3 bg-white text-center">
+                          <div class="cat-img">
+                            <img src="images/sunglasses/sunglass-3.png" class="w-100" alt="" />
+                          </div>
+                          <h5 class="fw-bold">Rayban Glasses</h5>
+                          <div class="cat-stars text-warning">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                          </div>
+                          <h5 class="fw-bold py-2">$400.00</h5>
+                          <button class="py-1">Add to cart</button>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-6">
+                        <div class="cat-item p-3 rounded-3 bg-white text-center">
+                          <div class="cat-img">
+                            <img src="images/sunglasses/sunglass-4.png" class="w-100" alt="" />
+                          </div>
+                          <h5 class="fw-bold">Brown Glasses</h5>
+                          <div class="cat-stars text-warning">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <i class="fa-regular text-secondary fa-star"></i>
+                          </div>
+                          <h5 class="fw-bold py-2">$220.00</h5>
+                          <button class="py-1">Add to cart</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="container">
+                    <div class="row gy-4 gy-lg-0">
+                      <div class="col-lg-3 col-md-6">
+                        <div class="cat-item p-3 rounded-3 bg-white text-center">
+                          <div class="cat-img">
+                            <img src="images/sunglasses/sunglass-5.png" class="w-100" alt="" />
+                          </div>
+                          <h5 class="fw-bold">Cool Glasses</h5>
+                          <div class="cat-stars text-warning">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular text-secondary fa-star"></i>
+                            <i class="fa-regular text-secondary fa-star"></i>
+                          </div>
+                          <h5 class="fw-bold py-2">$177.00</h5>
+                          <button class="py-1">Add to cart</button>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-6">
+                        <div class="cat-item p-3 rounded-3 bg-white text-center">
+                          <div class="cat-img">
+                            <img src="images/sunglasses/sunglass-6.png" class="w-100" alt="" />
+                          </div>
+                          <h5 class="fw-bold">Nice Glasses</h5>
+                          <div class="cat-stars text-warning">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <i class="fa-regular text-secondary fa-star"></i>
+                          </div>
+                          <h5 class="fw-bold py-2">$350.00</h5>
+                          <button class="py-1">Add to cart</button>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-6">
+                        <div class="cat-item p-3 rounded-3 bg-white text-center">
+                          <div class="cat-img">
+                            <img src="images/sunglasses/sunglass-7.png" class="w-100" alt="" />
+                          </div>
+                          <h5 class="fw-bold">Perfect Glasses</h5>
+                          <div class="cat-stars text-warning">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                          </div>
+                          <h5 class="fw-bold py-2">$330.00</h5>
+                          <button class="py-1">Add to cart</button>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-6">
+                        <div class="cat-item p-3 rounded-3 bg-white text-center">
+                          <div class="cat-img">
+                            <img src="images/sunglasses/sunglass-8.png" class="w-100" alt="" />
+                          </div>
+                          <h5 class="fw-bold">Speed Glasses</h5>
+                          <div class="cat-stars text-warning">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                          </div>
+                          <h5 class="fw-bold py-2">$500.00</h5>
+                          <button class="py-1">Add to cart</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#SunglassesCarousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#SunglassesCarousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--categories End-->
+  <!--==================================================================-->
+
+  <!--==================================================================-->
+  <!--Best Sellers Start-->
+  <div id="best-sellers" class="best-bg py-5 my-5">
+    <div class="best-title text-center pb-5">
+      <h2 class="fw-bold display-6 text-white">Best Sellers</h2>
+    </div>
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner px-5">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <div class="container">
+            <div class="row gy-4 gy-md-0">
+              <div class="col-lg-4 col-md-6">
+                <div class="best-img position-relative">
+                  <img src="images/shirt.jpg" class="w-100" alt="" />
+                  <div class="best-sign position-absolute top-0 end-0">
+                    <button class="btn btn-secondary btn-sm mt-2 me-2">
+                      New
+                    </button>
+                  </div>
+                  <div
+                    class="add-cart bg-black py-2 text-white d-flex justify-content-around align-items-center position-absolute bottom-0 start-0 end-0">
+                    <i class="fa-solid fa-heart"></i>
+                    <h5 class="fw-bold">Original Shirt</h5>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="best-img position-relative">
+                  <img src="images/a-bag.jpg" class="w-100" alt="" />
+                  <div class="best-sign position-absolute top-0 end-0">
+                    <button class="btn btn-secondary btn-sm mt-2 me-2">
+                      -20%
+                    </button>
+                  </div>
+                  <div
+                    class="add-cart bg-black py-2 text-white d-flex justify-content-around align-items-center position-absolute bottom-0 start-0 end-0">
+                    <i class="fa-solid fa-heart"></i>
+                    <h5 class="fw-bold">Black Bag</h5>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 m-md-auto mt-md-5 mt-lg-0">
+                <div class="best-img position-relative">
+                  <img src="images/jeansjacket.jpg" class="w-100" alt="" />
+                  <div class="best-sign position-absolute top-0 end-0">
+                    <button class="btn btn-secondary btn-sm mt-2 me-2">
+                      Sale
+                    </button>
+                  </div>
+                  <div
+                    class="add-cart bg-black py-2 text-white d-flex justify-content-around align-items-center position-absolute bottom-0 start-0 end-0">
+                    <i class="fa-solid fa-heart"></i>
+                    <h5 class="fw-bold">Jeans Jacket</h5>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <div class="container">
+            <div class="row gy-4 gy-md-0">
+              <div class="col-lg-4 col-md-6">
+                <div class="best-img position-relative">
+                  <img src="images/jacket.jpg" class="w-100" alt="" />
+                  <div class="best-sign position-absolute top-0 end-0">
+                    <button class="btn btn-secondary btn-sm mt-2 me-2">
+                      Sale
+                    </button>
+                  </div>
+                  <div
+                    class="add-cart py-2 bg-black text-white d-flex justify-content-around align-items-center position-absolute bottom-0 start-0 end-0">
+                    <i class="fa-solid fa-heart"></i>
+                    <h5 class="fw-bold">Cool Jacket</h5>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="best-img position-relative">
+                  <img src="images/black_leather.jpg" class="w-100" alt="" />
+                  <div class="best-sign position-absolute top-0 end-0">
+                    <button class="btn btn-secondary btn-sm mt-2 me-2">
+                      New
+                    </button>
+                  </div>
+                  <div
+                    class="add-cart py-2 bg-black text-white d-flex justify-content-around align-items-center position-absolute bottom-0 start-0 end-0">
+                    <i class="fa-solid fa-heart"></i>
+                    <h5 class="fw-bold">Fur Coat</h5>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 m-md-auto mt-md-5 mt-lg-0">
+                <div class="best-img position-relative">
+                  <img src="images/w-hoodie.jpg" class="w-100" alt="" />
+                  <div class="best-sign position-absolute top-0 end-0">
+                    <button class="btn btn-secondary btn-sm mt-2 me-2">
+                      Sale
+                    </button>
+                  </div>
+                  <div
+                    class="add-cart py-2 bg-black text-white d-flex justify-content-around align-items-center position-absolute bottom-0 start-0 end-0">
+                    <i class="fa-solid fa-heart"></i>
+                    <h5 class="fw-bold">Comfort Hoodie</h5>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <div class="row gy-4 gy-md-0">
+              <div class="col-lg-4 col-md-6">
+                <div class="best-img position-relative">
+                  <img src="images/jacket2.jpg" class="w-100" alt="" />
+                  <div class="best-sign position-absolute top-0 end-0">
+                    <button class="btn btn-secondary btn-sm mt-2 me-2">
+                      New
+                    </button>
+                  </div>
+                  <div
+                    class="add-cart py-2 bg-black text-white d-flex justify-content-around align-items-center position-absolute bottom-0 start-0 end-0">
+                    <i class="fa-solid fa-heart"></i>
+                    <h5 class="fw-bold">Black Jacket</h5>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="best-img position-relative">
+                  <img src="images/b-bag.jpg" class="w-100" alt="" />
+                  <div class="best-sign position-absolute top-0 end-0">
+                    <button class="btn btn-secondary btn-sm mt-2 me-2">
+                      -50%
+                    </button>
+                  </div>
+                  <div
+                    class="add-cart py-2 bg-black text-white d-flex justify-content-around align-items-center position-absolute bottom-0 start-0 end-0">
+                    <i class="fa-solid fa-heart"></i>
+                    <h5 class="fw-bold">Brown Bag</h5>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 m-md-auto mt-md-5 mt-lg-0">
+                <div class="best-img position-relative">
+                  <img src="images/hoodie.jpg" class="w-100" alt="" />
+                  <div class="best-sign position-absolute top-0 end-0">
+                    <button class="btn btn-secondary btn-sm mt-2 me-2">
+                      Sale
+                    </button>
+                  </div>
+                  <div
+                    class="add-cart py-2 bg-black text-white d-flex justify-content-around align-items-center position-absolute bottom-0 start-0 end-0">
+                    <i class="fa-solid fa-heart"></i>
+                    <h5 class="fw-bold">Blue Hoodie</h5>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev ms-2" type="button" data-bs-target="#carouselExampleInterval"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next me-2" type="button" data-bs-target="#carouselExampleInterval"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <!--Best Sellers End-->
+  <!--==================================================================-->
+  <!--==================================================================-->
+  <!--formal Start-->
+  <div id="formal">
+    <div class="container">
+      <div class="row bg-white justify-content-center align-items-center">
+        <div class="col-md-6 p-0">
+          <div class="position-relative">
+            <img src="images/formal.jpg" class="ex-img w-100" alt="" />
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="p-5">
+            <h2 class="display-6 fw-bold pb-2">Gentle Formal Looks</h2>
+
+            <p class="fs-5 pb-4">
+              We provide the top formal apparel package to make your job look
+              confident and comfortable. Stay connect.
+            </p>
+
+            <button class="blog-btn fw-bold px-4 py-2">
+              Explore Collection
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--formal End-->
+  <!--==================================================================-->
+  <!--blog Start-->
+  <div id="blog" class="my-5">
+    <div class="blog-title text-center py-5">
+      <h2 class="fw-bold display-6">Blog Posts</h2>
+    </div>
+    <div class="container">
+      <div class="row gy-4 gy-md-0">
+        <div class="col-lg-4 col-md-6">
+          <div class="blog-post text-center shadow">
+            <div class="blog-img position-relative overflow-hidden">
+              <img src="images/blog1.jpg" class="w-100 h-100" alt="" />
+              <div class="mt-3 ms-3 position-absolute top-0 start-0 bg-white py-1 px-2 text-center shadow">
+                <h4 class="fw-bold mb-0">25</h4>
+                <span class="small">MAR</span>
+              </div>
+            </div>
+            <div class="blog-data p-4">
+              <h4 class="fw-bold blog-title">Best Website ever !</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                do eiusmod tempor incididunt
+              </p>
+              <button class="fw-bold blog-btn py-2 px-3">Read More</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="blog-post text-center shadow">
+            <div class="blog-img position-relative overflow-hidden">
+              <img src="images/blog2.jpg" class="w-100 h-100" alt="" />
+              <div class="mt-3 ms-3 position-absolute top-0 start-0 bg-white py-1 px-2 text-center shadow">
+                <h4 class="fw-bold mb-0">6</h4>
+                <span class="small">OCT</span>
+              </div>
+            </div>
+            <div class="blog-data p-4">
+              <h4 class="fw-bold blog-title">Rate my outfit</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                do eiusmod tempor incididunt
+              </p>
+              <button class="fw-bold blog-btn py-2 px-3">Read More</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 m-md-auto mt-md-5 mt-lg-0">
+          <div class="blog-post text-center shadow">
+            <div class="blog-img position-relative overflow-hidden">
+              <img src="images/blog3.jpg" class="w-100 h-100" alt="" />
+              <div class="mt-3 ms-3 position-absolute top-0 start-0 bg-white py-1 px-2 text-center shadow">
+                <h4 class="fw-bold mb-0">20</h4>
+                <span class="small">DEC</span>
+              </div>
+            </div>
+            <div class="blog-data p-4">
+              <h4 class="fw-bold blog-title">My New Jacket</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                do eiusmod tempor incididunt
+              </p>
+              <button class="fw-bold blog-btn py-2 px-3">Read More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--blog End-->
+  <!--==================================================================-->
+  <!--==================================================================-->
+  <!--contact Start-->
+  <div id="contact" class="contact py-5 bg-black">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 d-flex flex-md-column align-items-center pb-3 pb-md-0 justify-content-evenly">
+          <div class="contact-icon rounded-pill">
+            <i class="fa-brands fa-facebook fa-2xl"></i>
+          </div>
+          <div class="contact-icon rounded-pill">
+            <i class="fa-brands fa-twitter fa-2xl"></i>
+          </div>
+          <div class="contact-icon rounded-pill">
+            <i class="fa-brands fa-instagram fa-2xl"></i>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="contact-col rounded-4 px-4 pt-4 bg-white">
+            <div class="container">
+              <div class="contact-title">
+                <h2 class="py-3">GET IN TOUCH</h2>
+              </div>
+              <div class="row gy-4">
+                <div class="col-md-12">
+                  <label for="fn" class="form-label">Name</label>
+                  <input type="text" class="form-control rounded-pill" id="fn" />
+                </div>
+                <div class="col-md-12">
+                  <label for="email" class="form-label">E-mail</label>
+                  <input type="email" class="form-control rounded-pill" id="email" />
+                </div>
+                <div class="col-md-12">
+                  <label for="Phone" class="form-label">Phone</label>
+                  <input type="number" class="form-control rounded-pill" id="Phone" />
+                </div>
+                <div class="col-md-12">
+                  <label for="exampleFormControlTextarea1" class="form-label">What's your wishlist ?</label>
+                  <textarea class="form-control rounded-4" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+              </div>
+              <div class="main-btn w-100 text-center py-4">
+                <button class="bg-black text-white rounded-pill fw-bold py-3 px-4 border-0 m-auto">
+                  Submit
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 d-flex flex-md-column align-items-center pt-3 pt-md-0 justify-content-evenly">
+          <div class="contact-icon rounded-pill">
+            <i class="fa-brands fa-whatsapp fa-2xl"></i>
+          </div>
+          <div class="contact-icon rounded-pill">
+            <i class="fa-brands fa-telegram fa-2xl"></i>
+          </div>
+          <div class="contact-icon rounded-pill">
+            <i class="fa-brands fa-linkedin fa-2xl"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--contact End-->
+  <!--==================================================================-->
+  <!--discount Start-->
+  <div class="discount py-5 overflow-hidden">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="discount-content text-center text-md-start my-5 text-white ms-0 ms-md-5 py-4 px-3">
+            <h2 class="pb-0 fw-bold">Get -50% from</h2>
+            <h2 class="pb-0 fw-bold">Summer Collection</h2>
+            <h6 class="fw-bold">Hurry up! Limited time offer</h6>
+            <div class="row">
+              <div class="col-lg-8">
+                <div class="row py-4">
+                  <div class="col-md-2 text-center">
+                    <h3 class="fw-bold">09</h3>
+                    <span class="fw-bold">DAY</span>
+                  </div>
+                  <div class="col-md-2 text-center">
+                    <h3 class="fw-bold">22</h3>
+                    <span class="fw-bold">HOUR</span>
+                  </div>
+                  <div class="col-md-2 text-center">
+                    <h3 class="fw-bold">40</h3>
+                    <span class="fw-bold">MINUTE</span>
+                  </div>
+                  <div class="col-md-2 text-center">
+                    <h3 class="fw-bold">32</h3>
+                    <span class="ps-1 fw-bold">SECOND</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="py-3 px-3 fw-bold discount-btn">Shop Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--discount End-->
+  <!--footer Start-->
+  <div id="footer " class="bg-black text-white pt-5">
+    <div class="container">
+      <div class="row gy-5 gy-md-0">
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+          <a class="navbar-brand logo-font d-flex align-items-center pb-3" href="#home">
+            <i class="fa-solid fa-bag-shopping fa-xl me-2 mb-1"></i>
+            <h2 class="d-inline m-0">Shopper</h2>
+          </a>
+          <div class="d-flex flex-column footer-links">
+            <a href="" class="text-white pb-1">
+              <i class="fa-solid fa-arrow-right"></i> About Us</a>
+            <a href="" class="text-white pb-1"><i class="fa-solid fa-arrow-right"></i> Contact Us</a>
+            <a href="" class="text-white pb-1"><i class="fa-solid fa-arrow-right"></i> Privacy Policy</a>
+            <a href="" class="text-white pb-1"><i class="fa-solid fa-arrow-right"></i> Terms &amp;
+              Conditions</a>
+            <a href="" class="text-white pb-1"><i class="fa-solid fa-arrow-right"></i> FAQs &amp; Help</a>
+            <a href="" class="text-white pb-1"><i class="fa-solid fa-arrow-right"></i> Feedback</a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+          <h3 class="fw-bold pb-2">Contact</h3>
+          <p class="text-white">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>123 Faisal Street, Giza, Egypt</span>
+          </p>
+          <p class="text-white">
+            <i class="fa-solid fa-phone"></i>
+            <span>+2 (010) 809-5432</span>
+          </p>
+          <p class="text-white">
+            <i class="fa-solid fa-envelope"></i>
+            <span>Shopper@gmail.com</span>
+          </p>
+          <div class="col-lg-auto footer-icons pt-2">
+            <i class="fa-brands fa-twitter fa-xl ms-0"></i>
+            <i class="fa-brands fa-facebook fa-xl"></i>
+            <i class="fa-brands fa-instagram fa-xl"></i>
+            <i class="fa-brands fa-linkedin fa-xl"></i>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+          <h3 class="fw-bold pb-2">Company</h3>
+          <p class="text-white">Free Shipping</p>
+          <p class="text-white">New Products</p>
+          <p class="text-white">Gift card</p>
+          <p class="text-white">Reservations</p>
+          <p class="text-white">Careers</p>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h3 class="fw-bold pb-2">Stay Up To Date</h3>
+          <p class="text-white">Be the first one knows about our offers !</p>
+          <p class="text-white">Your Wishlist</p>
+
+          <p class="text-white">Sign up now</p>
+          <div class="search-bar position-relative mt-2">
+            <input type="text" class="form-control border-0 py-3 px-2 ps-4 text-white" placeholder="Your Email" />
+            <button class="bg-black text-white border-0 py-2 px-3 position-absolute top-0 end-0 mt-2 me-2">
+              Sign Up
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright text-center mt-5 pt-3 pb-1 border-top">
+      <div class="container d-md-flex justify-content-between fs-6">
+        <p class="text-white">
+          Copyright © <span class="fw-bold logo-font">Shopper</span>. All
+          Right Reserved.
+        </p>
+        <p class="text-white">
+          Designed by <span class="fw-bold">Hisham</span>
+        </p>
+      </div>
+    </div>
+  </div>
+  <!--footer End-->
+  <!--==================================================================-->
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
